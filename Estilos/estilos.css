@@ -1,0 +1,320 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #fff;
+}
+
+header{
+	width: 100%;
+	height: 90%;
+	background: #76e5d1;
+}
+
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+
+.Logo{
+	float: left;
+	padding: 20px 28px 0;
+}
+
+.Logo img{
+	height: 60px;
+}
+
+.Logo img:hover{
+	transform: scale(1.1);
+}
+
+.navegacion{
+	float:center;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+
+.navegacion ul li a{
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s;
+}
+
+.navegacion ul li a:hover{
+	color: #5b297f;
+	transform: scale(1.1);
+}
+
+/*======= Redes sociales ========*/
+
+#redes_sociales{
+	float: right;
+	width: 140px;/*ancho de la caja*/
+	height: auto;/*alto de la caja*/
+	padding: 0px 20px 0 0;
+}
+
+#Wsp{ background-image:url(../img/Wsp.png);}
+#Facebook{ background-image:url(../img/Facebook.png);}
+#Correo{ background-image:url(../img/Correo.png);}
+
+#Wsp, #Facebook, #Correo{
+	width: 25px;
+	height: 25px;
+	background-position: top;
+	float: left;
+	margin: 0 5px;
+}
+
+#Wsp:hover, #Facebook:hover, #Correo:hover{
+	background-position: bottom;
+}
+
+/*======= Slider Texto ========*/
+
+.container{
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+.container span{
+	top: 400px;
+	margin: 50px;
+	color: #fff;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #5b297f;
+	border: 12px solid #5b297f;
+}
+
+.text1{
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+}
+
+/*======= Slider  ========*/
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 20s infinite;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{
+	0% { margin-left: 0;}
+	20% { margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% { margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% { margin-left: -200%;}
+
+	
+	75% {margin-left: -300%;}
+	100% { margin-left: -300%;}
+}
+
+/*============ Mensaje de bienvenida ============*/
+
+#bienvenida{
+	width: 100%;
+	max-width: 1300px;
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+#bienvenida_texto{
+	float: right;
+	padding: 50px;
+	width: 84%;
+	height: auto;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	color: #5b297F;
+	font-weight: 900;
+	font-size: 3.5em;
+}
+
+p{
+	color: #606060;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+#icono-dogcat{
+	display: flex;
+	padding: 50px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	float: left;
+}
+
+
+/*============ Sedes ============*/
+#sede{
+	color: #606060;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+#sede .caja{
+	display: flex;
+	margin: 0 50px;
+	flex-wrap: wrap;
+	width: auto;
+	justify-content: center;
+}
+
+.info-sede{
+	margin: 20px;
+	color: #76e5d1;
+}
+
+.info-sede img{
+	width: 280px;
+	height: 280px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	border: 6px solid #5b297f;
+}
+
+.slider_servicio{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider_servicio ul{
+	display: flex;
+	padding: 0;
+	width: auto;
+}
+
+.slider_servicio li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider_servicio img{
+	width: 100%;
+}
+
+/*============ Mensaje de servicios ============*/
+
+#bienvenida_servicio{
+	width: 100%;
+	max-width: 1300px;
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+#bienvenida_texto_servicio{
+	float: right;
+	padding: 50px;
+	width: auto;
+	height: auto;
+}
+
+p{
+	color: #606060;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+
+/*============ Servicios ============*/
+#Servicios{
+	width: 100%;
+	height: auto;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 0.9em;
+	text-align: center;
+	display: flex;
+	background-color: red;
+}
+
+#Servicios .caja_servicios{
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin: 0 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #5b297f;
+	text-align: center;
+}
+
+.info-servicios{
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	margin: 10px;
+	color: #fff;
+	background-color: #76e5d1;
+}
